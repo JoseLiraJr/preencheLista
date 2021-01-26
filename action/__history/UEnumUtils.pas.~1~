@@ -1,0 +1,37 @@
+unit UEnumUtils;
+
+interface
+
+uses
+  System.Classes;
+
+type
+  TEnumUtils<T> = class
+  public
+    procedure EnumToList(Value : TStrings);
+  end;
+
+implementation
+
+uses
+  System.TypInfo;
+
+{ TEnumUtils<T> }
+
+procedure TEnumUtils<T>.EnumToList(Value: TStrings);
+var
+  nome : string;
+  i, pos : Integer;
+begin
+  Value.Clear;
+  i := 0;
+  while i < 0 do
+   begin
+     nome := GetEnumName(TypeInfo(T), i);
+     i := GetEnumValue(TypeInfo(T), nome);
+     if i <= 0 then
+       Value.Add(nome);
+   end;
+end;
+
+end.

@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2020/09/14 20:39:02.000.576,=C:\Users\jlira\OneDrive\Documentos\Embarcadero\Studio\Projects\WebModuleUnit1.pas</Transaction>
+    <Transaction>2021/01/25 18:53:39.000.890,=C:\Users\jlira\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2021/01/25 19:19:45.000.260,C:\PrencheLista\view\uPrincipal.pas=C:\Users\jlira\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2021/01/25 19:19:45.000.260,C:\PrencheLista\view\uPrincipal.dfm=C:\Users\jlira\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>2021/01/25 19:20:35.000.317,C:\PrencheLista\preencheLista.dproj=C:\Users\jlira\OneDrive\Documentos\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>2021/01/25 19:28:23.773,=C:\PreencheLista\view\uSobre.pas</Transaction>
+    <Transaction>2021/01/25 20:41:41.194,=C:\PreencheLista\Unit1.pas</Transaction>
+    <Transaction>2021/01/25 21:13:35.671,C:\PreencheLista\action\UEnumUtils.pas=C:\PreencheLista\Unit1.pas</Transaction>
+  </Transactions>
+</BorlandProject>

@@ -1,0 +1,57 @@
+unit uPrincipal;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.ExtCtrls;
+
+type
+  (* Listas de impostos que serão lidas usando o Generics e carregadas no Combobox*)
+  TImpFederais = (IE, II, IOF, ITR, IPI, IRPF, IRPJ, INSS, COFINS, CIDE, CSLL, FGTS, PASEP);
+  TImpEstaduais = (ICMS, ITCMD, IPVA);
+  TImpMunicipais = (IPTU, ISS, ITBI);
+
+  TfrmPrincipal = class(TForm)
+    cmbLista: TComboBox;
+    btnSobre: TButton;
+    Bevel1: TBevel;
+    btnFechar: TButton;
+    RadioGroup1: TRadioGroup;
+    btnPrencher: TButton;
+    procedure btnSobreClick(Sender: TObject);
+    procedure btnFecharClick(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  frmPrincipal: TfrmPrincipal;
+
+implementation
+
+uses
+  uSobre;
+
+{$R *.dfm}
+
+procedure TfrmPrincipal.btnFecharClick(Sender: TObject);
+begin
+  Application.Terminate;
+end;
+
+procedure TfrmPrincipal.btnSobreClick(Sender: TObject);
+var
+  frmSobre : TfrmSobre;
+begin
+  frmSobre := TfrmSobre.Create(Self);
+  try
+    frmSobre.ShowModal;
+  finally
+    frmSobre.Free;
+  end;
+end;
+
+end.
